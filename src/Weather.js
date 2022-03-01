@@ -9,8 +9,6 @@ export default function Weather(props) {
   const [icon, setIcon] = useState(null);
 
   function showTemp(response) {
-    console.log(response.data);
-
     setTemp(response.data.main.temp);
     setDesc(response.data.weather[0].description);
     setHumidity(response.data.main.humidity);
